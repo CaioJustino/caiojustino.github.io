@@ -1,0 +1,490 @@
+/* STYLE CONFIGS */
+
+/* GERAL */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #272341;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* HEADER */
+
+header {
+    min-height: 100vh;
+    height: 100vh;
+    z-index: -1;
+    background: #FFFFFF;
+    border-bottom: 0;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 9rem;
+    display: flex;
+    inset: 0;
+}
+
+@keyframes showHeader {
+    0% {
+        transform: translatey(-150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+header #content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    animation: 2s ease 0s 1 showHeader;
+    transition: 2s all ease;
+}
+
+header h1, h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+header h1 {
+    color: #4760B9;
+    margin: 0;
+}
+
+header h3 {
+    font-weight: 400;
+    margin-top: 3.2rem;
+}
+
+header button, #aboutme button {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3.2rem;
+    padding: 0.5rem 2rem;
+    border: 2px solid #4760B9;
+    background-color: #FFFFFF;
+    color: #4760B9;
+    transition: 0.5s all;
+}
+
+header i {
+    margin-top: 70px;
+    color: #4760B9;    
+}
+
+header button:hover, #aboutme button:hover {
+    border: 2px solid #4760B9;
+    background-color: #4760B9;
+    color: #FFFFFF;
+}
+
+header a:link, #aboutme a:link {
+    text-decoration: none;
+    color: #4760B9;
+}
+
+header a, #aboutme a  {
+    color: #4760B9;
+    transition: 0.5s all;
+}
+
+header button:hover a, #aboutme button:hover a {
+    color: #FFFFFF;
+}
+
+/* MAIN */
+
+/* SOBRE */
+
+#aboutme {
+    color: #FFFFFF;
+    background: #4760B9;
+    border-bottom: 0;
+    margin-bottom: 2rem;
+    padding: 5rem 5.6rem;
+    display: flex;
+    inset: 0;
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    background-color: #4760B9;
+    background-image: #4760B9;
+    border-top: 0;
+    padding-bottom: 10%;
+}
+
+#aboutme #content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+#aboutme #content.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#aboutme h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#aboutme p {
+    font-size: 1.5rem;
+}
+
+#aboutme button {
+    border: 2px solid #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    background-color: #4760B9;
+    color: #FFFFFF;
+    transition: 0.5s all;
+}
+ 
+#aboutme button:hover {
+    border: 2px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #4760B9;
+}
+ 
+#aboutme a:link {
+    text-decoration: none;
+    color: #4760B9;
+}
+ 
+#aboutme a  {
+    color: #4760B9;
+    transition: 0.5s all;
+}
+
+#aboutme button:hover a {
+    color: #FFFFFF;
+}
+
+#aboutme #content-2 {
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#aboutme #img-side, #aboutme #info-side {
+    padding: 60px;
+}
+
+#aboutme #info-side a:link {
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#aboutme #info-side {
+    text-align: justify;
+}
+
+/* PROJETOS */
+
+#projects {
+    background: #FFFFFF;
+    border-bottom: 0;
+    margin-bottom: 2rem;
+    padding: 5rem 5.6rem;
+    display: flex;
+    inset: 0;
+    border-top: 0;
+    padding-bottom: 10%;
+}
+
+#projects #content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+#projects #content.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#projects h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4760B9;
+}
+
+#projects #title {
+    font-size: 1.7rem;
+}
+
+#projects p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#projects button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    color: #4760B9;
+    border: 2px solid #4760B9;
+    transition: 0.5s all;
+}
+ 
+#projects button:hover {
+    background-color: #4760B9;
+    color: #FFFFFF;
+    border: 2px solid #4760B9;
+}
+ 
+#projects a:link {
+    text-decoration: none;
+    color: #4760B9;
+}
+ 
+#projects a  {
+    color: #4760B9;
+    transition: 0.5s all;
+}
+
+#projects button:hover a {
+    color: #FFFFFF;
+}
+
+#projects #content-2 {
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#projects #img-side, #projects #info-side {
+    padding: 60px;
+}
+
+/* FOOTER */
+
+#contact {
+    font-size: 1.1rem;
+    color: #BFBFBF;
+    background: #272727;
+    border-bottom: 0;
+    padding: 5rem;
+    display: flex;
+    inset: 0;
+    border-top: 0;
+}
+
+#contact #content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    transition: 2s all ease;
+}
+
+#contact #content #social-media {
+    margin-bottom: 2rem;
+}
+
+#contact #content #social-media i {
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+
+#contact #content #data {
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 2560px) {
+    /* GENERAL */
+    
+    #content {
+        max-width: 1420px;
+    }
+
+    /* SOBRE */
+
+    #aboutme img {
+        width: 400px;
+    }
+
+    /* PROJETOS */
+
+    #projects #title {
+        font-size: 1.8rem;
+    }
+
+    #projects p, #projects button {
+        font-size: 1.2rem;
+    }
+
+    #projects #img-side {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    #contact #content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    /* GENERAL */
+    
+    #content {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #content {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 992px) {
+    #content {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* GENERAL */
+    
+    #content {
+        max-width: 720px;
+    }
+
+    /* HEADER */
+
+    header h1, h3 {
+        font-size: 2rem;
+    }
+
+    /* SOBRE */
+    
+    #aboutme {
+        padding-bottom: 35%;
+    }
+
+    #aboutme #img-side, #aboutme #info-side {
+        padding: 30px;
+    }
+
+
+    /* PROJETOS */
+
+    #projects #img-side, #projects #info-side {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    /* GENERAL */
+
+    #content {
+        max-width: 540px;
+    }
+
+    header, #aboutme, #projects, #contact {
+        padding: 3rem 1rem;
+    }
+
+    /* HEADER */
+
+    header h1, h3 {
+        font-size: 1.5rem;
+    }
+
+    header h3 {
+        margin-top: 2.5rem;
+    }
+    
+    header button, #aboutme button {
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+    }
+
+    /* SOBRE */
+
+    #aboutme {
+        padding-bottom: 45%;
+    }
+
+    #aboutme h1 {
+        font-size: 2.2rem;
+    }
+    
+    #aboutme p {
+        font-size: 1.2rem;
+    }
+
+    #aboutme img {
+        width: 300px;
+    }
+
+    #aboutme #img-side, #aboutme #info-side {
+        padding: 10px;
+    }
+
+    /* PROJETOS */
+
+    #projects h1 {
+        font-size: 2.2rem;
+    }
+    
+    #projects #title {
+        font-size: 1.5rem;
+    }
+    
+    #projects p {
+        font-size: 1rem;
+    }
+
+    #projects #info-side {
+        padding: 10px;
+    }
+    
+    #projects #img-side {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    /* GENERAL */
+
+    header, #aboutme, #projects {
+        padding: 3rem 1rem;
+    }
+
+    /* SOBRE */
+
+    #aboutme {
+        padding-bottom: 60%;
+    }
+
+    #aboutme img {
+        width: 250px;
+    }
+
+    #aboutme button {
+        margin-top: 1.8rem;
+    }
+}
